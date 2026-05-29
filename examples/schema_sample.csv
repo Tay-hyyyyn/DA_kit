@@ -1,0 +1,7 @@
+TagName,IGCC.DeNOX.AT_H1_901_PV,IGCC.CC.G1.DWATT,IGCC.CC.G1.TTXM,IGCC.CC.G1.CTIM,IGCC.CC.G1.CTD,IGCC.CC.G1.NQJ
+Description,target,power,temperature_a,temperature_b,temperature_c,flow
+Unit,ppm,mw,c,c,c,unit
+Plot Min,0,0,0,0,0,0
+Plot Max,100,100,100,100,100,100
+2026-01-01 00:00:00,10.0,50.0,600.0,300.0,120.0,1.2
+2026-01-01 00:00:01,10.2,51.0,601.0,301.0,121.0,1.3

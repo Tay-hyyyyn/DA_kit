@@ -1,0 +1,34 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.pyc
+.venv*/
+
+# Local runtime
+runs/
+References/
+state/
+tmp/
+*.log
+
+# Data and model artifacts
+*.csv
+*.tsv
+*.parquet
+*.pkl
+*.joblib
+*.bin
+*.model
+
+# Keep the public schema sample
+!examples/
+!examples/schema_sample.csv
+
+# Private config
+config/*.json
+!config/*.example.json

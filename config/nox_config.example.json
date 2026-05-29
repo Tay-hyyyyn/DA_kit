@@ -1,0 +1,27 @@
+{
+  "project_name": "da-kit-baseline",
+  "run_id": "demo_run",
+  "raw_data": {
+    "directory": "<raw-data-dir>",
+    "files": [
+      "<first-input.csv>",
+      "<second-input.csv>"
+    ],
+    "timestamp_column": "TagName",
+    "metadata_rows": 5
+  },
+  "target": {
+    "column": "IGCC.DeNOX.AT_H1_901_PV",
+    "task_type": "regression"
+  },
+  "split": {
+    "strategy": "temporal_holdout",
+    "holdout_days": 3,
+    "gap_seconds": 300,
+    "cv_folds": 5,
+    "start_time": "<yyyy-mm-dd hh:mm:ss>"
+  },
+  "outputs": {
+    "run_directory": "runs/<run_id>"
+  }
+}
