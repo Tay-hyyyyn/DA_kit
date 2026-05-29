@@ -1,14 +1,16 @@
-# DA_kit
+# DA_kit NOx/IGCC Baseline
 
-`DA_kit` is a clean, public baseline workflow for staged tabular data analysis. It packages the reusable NOx-style workflow without local machine paths, raw data, run outputs, model binaries, or private experiment history.
+`DA_kit` is a **NOx/IGCC-specific public baseline workflow**. It is not the fully generic data-analysis kit.
+
+This repository packages a sanitized NOx-style staged workflow without local machine paths, raw data, run outputs, model binaries, or private experiment history. The feature logic, example schema, target column, and reporting language are tailored to the NOx/IGCC analysis context.
 
 ## What Is Included
 
-- raw table intake and normalization
-- feature-building stage
+- raw NOx/IGCC table intake and normalization
+- NOx/IGCC feature-building stage
 - temporal holdout and rolling fold split
-- baseline model/report stage
-- schema-only example data
+- NOx baseline model/report stage
+- NOx/IGCC schema-only example data
 - publication safety checks
 
 ## Repository Layout
@@ -48,3 +50,7 @@ Generated outputs are written under `runs/<run_id>/` and are intentionally ignor
 ## Safety
 
 Do not commit raw data, run outputs, model artifacts, private configs, local virtual environments, or machine-specific paths. See `docs/github_publish_guide.md` before pushing.
+
+## Generic Kit
+
+For a fully generic, config-driven tabular data-analysis kit, use the separate universal Manual-based package repository rather than this NOx/IGCC baseline repository.
